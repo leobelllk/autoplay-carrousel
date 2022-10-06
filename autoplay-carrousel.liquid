@@ -1,0 +1,78 @@
+<div class="slider-lk">
+        <div class="slide-tracker-lk">
+            <div class="slide-lk">
+                <img src="{{ section.settings.image_1 | image_url: width:"250", height:"100"}}"  alt="" />
+            </div>
+            <div class="slide-lk">
+                <img src="{{ section.settings.image_2 | image_url: width:"250", height:"100"}}"  alt="" />
+            </div>
+            <div class="slide-lk">
+                <img src="{{ section.settings.image_3 | image_url: width:"250", height:"100"}}"  alt="" />
+            </div>
+            <div class="slide-lk">
+                <img src="{{ section.settings.image_4 | image_url: width:"250", height:"100"}}"  alt="" />
+            </div>
+            <div class="slide-lk">
+                <img src="{{ section.settings.image_5 | image_url: width:"250", height:"100"}}"  alt="" />
+            </div>
+            <div class="slide-lk">
+                <img src="{{ section.settings.image_1 | image_url: width:"250", height:"100"}}"  alt="" />
+            </div>
+            <div class="slide-lk">
+                <img src="{{ section.settings.image_2 | image_url: width:"250", height:"100"}}"  alt="" />
+            </div>
+            <div class="slide-lk">
+                <img src="{{ section.settings.image_3 | image_url: width:"250", height:"100"}}"  alt="" />
+            </div>
+            <div class="slide-lk">
+                <img src="{{ section.settings.image_4 | image_url: width:"250", height:"100"}}"  alt="" />
+            </div>
+            <div class="slide-lk">
+                <img src="{{ section.settings.image_5 | image_url: width:"250", height:"100"}}"  alt="" />
+            </div>
+        </div>
+    </div>
+
+
+{% schema %}
+  {
+    "name": "Marcas que confiam",
+    "class": "trust-badget",
+    "tag": "section",
+    "settings": [
+      {
+        "type": "image_picker",
+        "label": "Marca 1",
+        "id": "image_1"
+      },
+      {
+        "type": "image_picker",
+        "label": "Marca 2",
+        "id": "image_2"
+      },
+      {
+        "type": "image_picker",
+        "label": "Marca 3",
+        "id": "image_3"
+      },
+      {
+        "type": "image_picker",
+        "label": "Marca 4",
+        "id": "image_4"
+      },
+      {
+        "type": "image_picker",
+        "label": "Marca 5",
+        "id": "image_5"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Marcas que confiam",
+        "category":"Image",
+        "settings": {
+      }
+    }
+  ]
+}
+{% endschema %}
