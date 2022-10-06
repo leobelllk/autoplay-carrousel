@@ -1,0 +1,83 @@
+ @-webkit-keyframes scroll {
+                    0% {
+                        -webkit-transform: translateX(0);
+                        transform: translateX(0);
+                    }
+                    100% {
+                        -webkit-transform: translateX(calc(-250px * 7));
+                        transform: translateX(calc(-250px * 7));
+                    }
+                }
+                
+                @keyframes scroll {
+                    0% {
+                        -webkit-transform: translateX(0);
+                        transform: translateX(0);
+                    }
+                    100% {
+                        -webkit-transform: translateX(calc(-250px * 7));
+                        transform: translateX(calc(-250px * 7));
+                    }
+                }
+                
+                .slider-lk {
+                    height: 100px;
+                    margin: auto;
+                    overflow: hidden;
+                    position: relative;
+                    width: 1200px;
+                }
+                
+                .slider-lk::before,
+                .slider-lk::after {
+                    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+                    content: "";
+                    height: 100px;
+                    position: absolute;
+                    width: 200px;
+                    z-index: 2;
+                }
+                
+                .slider-lk::after {
+                    right: 0;
+                    top: 0;
+                    -webkit-transform: rotateZ(180deg);
+                    transform: rotateZ(180deg);
+                }
+                
+                .slider-lk::before {
+                    left: 0;
+                    top: 0;
+                }
+                
+                .slider-lk .slide-tracker-lk {
+                    -webkit-animation: scroll 40s linear infinite;
+                    animation: scroll 40s linear infinite;
+                    display: flex;
+                    justify-content: space-between;
+                    width: calc(250px * 13);
+                }
+                
+                .slider-lk .slide-lk {
+                    height: 100px;
+                    width: 250px;
+                }
+
+              @media screen and (max-width: 750px){
+                .slider-lk {
+                    height: 100px;
+                    margin: auto;
+                    overflow: hidden;
+                    position: relative;
+                    width: 350px;
+                    }    
+                  .slider-lk::before,
+                  .slider-lk::after {
+                    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+                    content: "";
+                    height: 100px;
+                    position: absolute;
+                    width: 70px;
+                    z-index: 2;
+                    }
+                  }    
